@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
 
 function Github() {
+  const [showCalendar, setShowCalendar] = useState(false);
+  const mountedRef = useRef(true);
+
+  useEffect(() => {
+    mountedRef.current = true;
+    
+    // Delay rendering to ensure component is fully mounted
+    const timer = setTimeout(() => {
+      if (mountedRef.current) {
+        setShowCalendar(true);
+      }
+    }, 300);
+
+    return () => {
+      mountedRef.current = false;
+      clearTimeout(timer);
+      // Prevent any state updates after cleanup
+      setShowCalendar(false);
+    };
+  }, []);
+
   return (
     <Row
       style={{
