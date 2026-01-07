@@ -15,7 +15,7 @@ function Github() {
         Days I <strong className="purple">Code</strong>
       </h1>
       <GitHubCalendar
-        username="OasisMate"
+        username="omair4"
         blockSize={30}
         blockMargin={10}
         color="#00D4FF"

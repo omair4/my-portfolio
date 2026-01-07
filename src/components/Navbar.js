@@ -58,7 +58,7 @@ function NavBar() {
                 lineHeight: "1"
               }}
             >
-              AH.
+              OH.
             </span>
           </Navbar.Brand>
           <Navbar.Toggle
@@ -123,7 +123,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/OasisMate/my-portfolio"
+                href="https://github.com/omair4/my-portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >

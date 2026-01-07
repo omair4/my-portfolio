@@ -42,7 +42,7 @@ function Projects() {
               isBlog={false}
               title="Project 1"
               description="Add your project description here. Describe what technologies you used, key features, and what problem it solves."
-              ghLink="https://github.com/OasisMate/PROJECT_1"
+              ghLink="https://github.com/omair4/PROJECT_1"
               demoLink="https://your-demo-link.com"
             />
           </Col>
@@ -53,7 +53,7 @@ function Projects() {
               isBlog={false}
               title="Project 2"
               description="Add your project description here. Describe what technologies you used, key features, and what problem it solves."
-              ghLink="https://github.com/OasisMate/PROJECT_2"
+              ghLink="https://github.com/omair4/PROJECT_2"
               demoLink="https://your-demo-link.com"
             />
           </Col>
@@ -64,7 +64,7 @@ function Projects() {
               isBlog={false}
               title="Project 3"
               description="Add your project description here. Describe what technologies you used, key features, and what problem it solves."
-              ghLink="https://github.com/OasisMate/PROJECT_3"
+              ghLink="https://github.com/omair4/PROJECT_3"
               demoLink="https://your-demo-link.com"              
             />
           </Col>
@@ -75,7 +75,7 @@ function Projects() {
               isBlog={false}
               title="Project 4"
               description="Add your project description here. Describe what technologies you used, key features, and what problem it solves."
-              ghLink="https://github.com/OasisMate/PROJECT_4"
+              ghLink="https://github.com/omair4/PROJECT_4"
               demoLink="https://your-demo-link.com"
             />
           </Col>
@@ -86,7 +86,7 @@ function Projects() {
               isBlog={false}
               title="Project 5"
               description="Add your project description here. Describe what technologies you used, key features, and what problem it solves."
-              ghLink="https://github.com/OasisMate/PROJECT_5"
+              ghLink="https://github.com/omair4/PROJECT_5"
             />
           </Col>
 
@@ -96,7 +96,7 @@ function Projects() {
               isBlog={false}
               title="Project 6"
               description="Add your project description here. Describe what technologies you used, key features, and what problem it solves."
-              ghLink="https://github.com/OasisMate/PROJECT_6"
+              ghLink="https://github.com/omair4/PROJECT_6"
             />
           </Col>
         </Row>

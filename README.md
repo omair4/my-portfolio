@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://your-portfolio-url.com" target="_blank">Ameer Hamza Portfolio</a>
+  <a href="https://your-portfolio-url.com" target="_blank">Omair Hassan Portfolio</a>
 </h2>
 
 <br/>
@@ -10,16 +10,16 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/OasisMate/my-portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/OasisMate/my-portfolio?color=red&logo=github&style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/omair4/my-portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
+![GitHub forks](https://img.shields.io/github/forks/omair4/my-portfolio?color=red&logo=github&style=for-the-badge)
 
 </center>
 
 <h3 align="center">
     🔹
-    <a href="https://github.com/OasisMate/my-portfolio/issues">Report Bug</a> &nbsp; &nbsp;
+    <a href="https://github.com/omair4/my-portfolio/issues">Report Bug</a> &nbsp; &nbsp;
     🔹
-    <a href="https://github.com/OasisMate/my-portfolio/issues">Request Feature</a>
+    <a href="https://github.com/omair4/my-portfolio/issues">Request Feature</a>
 </h3>
 
 ## TL;DR
@@ -70,7 +70,7 @@ You will find all the components used and you can edit your information accordin
 
 ## About
 
-**Ameer Hamza** - Senior Software Engineer with 5+ years of experience in designing and developing scalable and high-performance web applications. Specialized in Next.js, React.js, Node.js, TypeScript, AI integrations, and cloud-based deployments.
+**Omair Hassan** - Senior Software Engineer with 5+ years of experience in designing and developing scalable and high-performance web applications. Specialized in Next.js, React.js, Node.js, TypeScript, AI integrations, and cloud-based deployments.
 
 ### Show your support
 
