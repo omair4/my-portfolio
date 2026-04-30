@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-// TODO: Replace with your resume PDF file - Add Omair_Hassan_Resume.pdf to src/Assets/ folder
-import pdf from "../../Assets/omair_hassan.pdf";
+// TODO: Replace with your resume PDF file - Add Ameer_Hamza_Resume.pdf to src/Assets/ folder
+import pdf from "../../Assets/ameer_hamza.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -15,10 +15,19 @@ function ResumeNew() {
 
   useEffect(() => {
     setWidth(window.innerWidth);
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
+  }
+
+  function onDocumentLoadError(error) {
+    console.error("Error loading PDF:", error);
   }
 
   return (
@@ -37,16 +46,29 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume" style={{ justifyContent: "center" }}>
-          <Document
-            file={pdf}
+        <Row className="resume">
+          <Document 
+            file={pdf} 
+            className="d-flex justify-content-center"
             onLoadSuccess={onDocumentLoadSuccess}
+            onLoadError={onDocumentLoadError}
+            loading={<div style={{ color: "white", textAlign: "center", padding: "20px" }}>Loading PDF...</div>}
+            error={<div style={{ color: "white", textAlign: "center", padding: "20px" }}>Failed to load PDF. Please try again.</div>}
           >
-            {Array.from(new Array(numPages), (el, index) => (
-              <div key={`page_${index + 1}`} style={{ display: "flex", justifyContent: "center", marginBottom: "20px" }}>
+            {numPages && Array.from(new Array(numPages), (el, index) => (
+              <div 
+                key={`page_${index + 1}`} 
+                style={{ 
+                  marginBottom: "20px",
+                  display: "flex",
+                  justifyContent: "center"
+                }}
+              >
                 <Page
                   pageNumber={index + 1}
                   scale={width > 786 ? 1.7 : 0.6}
+                  renderTextLayer={false}
+                  renderAnnotationLayer={false}
                 />
               </div>
             ))}
